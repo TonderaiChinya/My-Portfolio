@@ -1,0 +1,14 @@
+{
+  "name": "tonderai",
+  "version": "1.0.0",
+  "description": "tonderai chinya portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Tonderai Chinya",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
