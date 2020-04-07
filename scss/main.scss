@@ -131,6 +131,104 @@ main {
   }
 }
 
+// Skills page
+.skills {
+  list-style: none;
+  text-align: left;
+  width: 70%;
+  margin: 60px auto;
+
+  li {
+    margin: 20px 0;
+
+    .bar {
+      // background: $secondary-color;
+      display: block;
+      height: 5px;
+      border: 1px solid white;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7b3;
+
+      span {
+        height: 2px;
+        float: left;
+        background: $secondary-color;
+
+        .html {
+          width: 90%;
+          animation: html 2s;
+        }
+
+        .css {
+          width: 75%;
+          animation: css 2s;
+        }
+
+        .javascript {
+          width: 70%;
+          animation: javascript 2s;
+        }
+
+        .python {
+          width: 85%;
+          animation: python 2s;
+        }
+
+        .cpp {
+          width: 60%;
+          animation: cpp 2s;
+        }
+      }
+    }
+  }
+
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+
+  @keyframes javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+
+  @keyframes python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+
+  @keyframes cpp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+}
+
 // Contact page
 .boxes {
   display: flex;
