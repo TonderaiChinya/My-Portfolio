@@ -56,6 +56,7 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
+      background-position: center;
       border-radius: 50%;
       border: solid 3px #00c0ff; }
   .menu .nav-item {
@@ -104,9 +105,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpeg);
+    background: url(../img/IMG_1217.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -115,7 +117,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(51, 51, 51, 0.9); }
+      background: rgba(51, 51, 51, 0.5); }
 
 h1,
 h2,
@@ -125,7 +127,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -146,7 +148,7 @@ header {
   color: #00c0ff; }
 
 main {
-  padding: 4rem;
+  padding: 2rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -158,7 +160,7 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 40vh; }
 
 .about-info {
   display: grid;
@@ -197,9 +199,8 @@ main {
       transition: all 0.5s ease-out; }
 
 .container {
-  width: 80%;
-  margin: 50px auto;
-  padding: 20px; }
+  width: 90%;
+  margin: 50px auto; }
 
 .container li {
   position: relative;
@@ -250,7 +251,7 @@ main {
 
 @keyframes python {
   to {
-    width: 60%; } }
+    width: 80%; } }
 
 .container li.javascript:after {
   animation-name: javascript; }
@@ -259,6 +260,55 @@ main {
   to {
     width: 70%; } }
 
+.container li.cpp:after {
+  animation-name: cpp; }
+
+@keyframes cpp {
+  to {
+    width: 50%; } }
+
+.container li.sass:after {
+  animation-name: sass; }
+
+@keyframes sass {
+  to {
+    width: 88%; } }
+
+.container li.django:after {
+  animation-name: django; }
+
+@keyframes django {
+  to {
+    width: 70%; } }
+
+.container li.angular:after {
+  animation-name: angular; }
+
+@keyframes angular {
+  to {
+    width: 70%; } }
+
+.container li.nodejs:after {
+  animation-name: nodejs; }
+
+@keyframes nodejs {
+  to {
+    width: 65%; } }
+
+.container li.bootstrap:after {
+  animation-name: bootstrap; }
+
+@keyframes bootstrap {
+  to {
+    width: 85%; } }
+
+.container li.flask:after {
+  animation-name: flask; }
+
+@keyframes flask {
+  to {
+    width: 78%; } }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -266,13 +316,13 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 1.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 1rem;
       background: #00c0ff;
       color: #000; }
       .boxes div:hover span {
@@ -306,7 +356,7 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (min-widht: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -344,6 +394,8 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 30vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .lg-heading {
+    font-size: 3rem; } }
