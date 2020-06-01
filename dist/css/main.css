@@ -237,14 +237,14 @@ main {
 
 @keyframes html {
   to {
-    width: 90%; } }
+    width: 95%; } }
 
 .container li.css:after {
   animation-name: css; }
 
 @keyframes css {
   to {
-    width: 80%; } }
+    width: 90%; } }
 
 .container li.python:after {
   animation-name: python; }
@@ -279,14 +279,14 @@ main {
 
 @keyframes django {
   to {
-    width: 70%; } }
+    width: 60%; } }
 
 .container li.angular:after {
   animation-name: angular; }
 
 @keyframes angular {
   to {
-    width: 70%; } }
+    width: 45%; } }
 
 .container li.nodejs:after {
   animation-name: nodejs; }
@@ -300,14 +300,14 @@ main {
 
 @keyframes bootstrap {
   to {
-    width: 85%; } }
+    width: 75%; } }
 
 .container li.flask:after {
   animation-name: flask; }
 
 @keyframes flask {
   to {
-    width: 78%; } }
+    width: 38%; } }
 
 .boxes {
   display: flex;
