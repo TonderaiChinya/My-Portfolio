@@ -23,7 +23,7 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   &.sm-heading {
@@ -49,7 +49,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 2rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
 
@@ -69,7 +69,7 @@ main {
   &#home {
     overflow: hidden;
     h1 {
-      margin-top: 20vh;
+      margin-top: 40vh;
     }
   }
 }
@@ -132,9 +132,8 @@ main {
 }
 // Skills page
 .container {
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
-  padding: 20px;
 }
 
 .container li {
@@ -189,7 +188,7 @@ main {
 }
 @keyframes python {
   to {
-    width: 60%;
+    width: 80%;
   }
 }
 .container li.javascript:after {
@@ -198,6 +197,63 @@ main {
 @keyframes javascript {
   to {
     width: 70%;
+  }
+}
+.container li.cpp:after {
+  animation-name: cpp;
+}
+@keyframes cpp {
+  to {
+    width: 50%;
+  }
+}
+.container li.sass:after {
+  animation-name: sass;
+}
+@keyframes sass {
+  to {
+    width: 88%;
+  }
+}
+.container li.django:after {
+  animation-name: django;
+}
+@keyframes django {
+  to {
+    width: 70%;
+  }
+}
+.container li.angular:after {
+  animation-name: angular;
+}
+@keyframes angular {
+  to {
+    width: 70%;
+  }
+}
+
+.container li.nodejs:after {
+  animation-name: nodejs;
+}
+@keyframes nodejs {
+  to {
+    width: 65%;
+  }
+}
+.container li.bootstrap:after {
+  animation-name: bootstrap;
+}
+@keyframes bootstrap {
+  to {
+    width: 85%;
+  }
+}
+.container li.flask:after {
+  animation-name: flask;
+}
+@keyframes flask {
+  to {
+    width: 78%;
   }
 }
 
@@ -210,14 +266,14 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 1.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 1rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
